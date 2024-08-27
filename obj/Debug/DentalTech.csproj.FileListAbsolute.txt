@@ -1,0 +1,16 @@
+C:\Users\marti\Documents\IFRO\3º ano\PDS\2 bimestre\DentalTech\obj\Debug\DentalTech.csproj.AssemblyReference.cache
+C:\Users\marti\Documents\IFRO\3º ano\PDS\2 bimestre\DentalTech\obj\Debug\DentalTech.csproj.SuggestedBindingRedirects.cache
+C:\Users\marti\Documents\IFRO\3º ano\PDS\2 bimestre\DentalTech\obj\Debug\App.g.cs
+C:\Users\marti\Documents\IFRO\3º ano\PDS\2 bimestre\DentalTech\obj\Debug\DentalTech_MarkupCompile.cache
+C:\Users\marti\Documents\IFRO\3º ano\PDS\2 bimestre\DentalTech\obj\Debug\DentalTech_MarkupCompile.lref
+C:\Users\marti\Documents\IFRO\3º ano\PDS\2 bimestre\DentalTech\bin\Debug\DentalTech.exe.config
+C:\Users\marti\Documents\IFRO\3º ano\PDS\2 bimestre\DentalTech\bin\Debug\DentalTech.exe
+C:\Users\marti\Documents\IFRO\3º ano\PDS\2 bimestre\DentalTech\bin\Debug\DentalTech.pdb
+C:\Users\marti\Documents\IFRO\3º ano\PDS\2 bimestre\DentalTech\obj\Debug\View\CadastrarPaciente.g.cs
+C:\Users\marti\Documents\IFRO\3º ano\PDS\2 bimestre\DentalTech\obj\Debug\View\CadastrarPaciente.baml
+C:\Users\marti\Documents\IFRO\3º ano\PDS\2 bimestre\DentalTech\obj\Debug\DentalTech.g.resources
+C:\Users\marti\Documents\IFRO\3º ano\PDS\2 bimestre\DentalTech\obj\Debug\DentalTech.Properties.Resources.resources
+C:\Users\marti\Documents\IFRO\3º ano\PDS\2 bimestre\DentalTech\obj\Debug\DentalTech.csproj.GenerateResource.cache
+C:\Users\marti\Documents\IFRO\3º ano\PDS\2 bimestre\DentalTech\obj\Debug\DentalTech.csproj.CoreCompileInputs.cache
+C:\Users\marti\Documents\IFRO\3º ano\PDS\2 bimestre\DentalTech\obj\Debug\DentalTech.exe
+C:\Users\marti\Documents\IFRO\3º ano\PDS\2 bimestre\DentalTech\obj\Debug\DentalTech.pdb

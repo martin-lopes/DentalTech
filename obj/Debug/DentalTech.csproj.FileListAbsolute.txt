@@ -14,3 +14,13 @@ C:\Users\marti\Documents\IFRO\3º ano\PDS\2 bimestre\DentalTech\obj\Debug\Dental
 C:\Users\marti\Documents\IFRO\3º ano\PDS\2 bimestre\DentalTech\obj\Debug\DentalTech.csproj.CoreCompileInputs.cache
 C:\Users\marti\Documents\IFRO\3º ano\PDS\2 bimestre\DentalTech\obj\Debug\DentalTech.exe
 C:\Users\marti\Documents\IFRO\3º ano\PDS\2 bimestre\DentalTech\obj\Debug\DentalTech.pdb
+C:\Users\marti\Documents\IFRO\3º ano\PDS\2 bimestre\DentalTech\bin\Debug\MaterialDesignColors.dll
+C:\Users\marti\Documents\IFRO\3º ano\PDS\2 bimestre\DentalTech\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\marti\Documents\IFRO\3º ano\PDS\2 bimestre\DentalTech\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\marti\Documents\IFRO\3º ano\PDS\2 bimestre\DentalTech\bin\Debug\MaterialDesignColors.pdb
+C:\Users\marti\Documents\IFRO\3º ano\PDS\2 bimestre\DentalTech\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\marti\Documents\IFRO\3º ano\PDS\2 bimestre\DentalTech\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\marti\Documents\IFRO\3º ano\PDS\2 bimestre\DentalTech\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\marti\Documents\IFRO\3º ano\PDS\2 bimestre\DentalTech\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\marti\Documents\IFRO\3º ano\PDS\2 bimestre\DentalTech\obj\Debug\App.baml
+C:\Users\marti\Documents\IFRO\3º ano\PDS\2 bimestre\DentalTech\obj\Debug\DentalTech.csproj.CopyComplete

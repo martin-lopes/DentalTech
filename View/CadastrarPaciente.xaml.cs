@@ -24,5 +24,15 @@ namespace DentalTech
         {
             InitializeComponent();
         }
+
+        private void TextBox_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void TextBox_TextInput(object sender, TextCompositionEventArgs e)
+        {
+
+        }
     }
 }

@@ -4,7 +4,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DentalTech"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
+        Style="{StaticResource MaterialDesignWindow}"
         Title="CadastrarPaciente" Height="880" Width="1500"
         WindowState="Maximized" WindowStartupLocation="CenterScreen">
     <Grid>
@@ -20,43 +22,64 @@
             <Image Source="../Resource/LogoDental.png" Width="150"/>
         </WrapPanel>
 
-        <StackPanel Grid.Column="0" Margin="30,180,30,0" VerticalAlignment="Top">
+        <StackPanel Grid.Column="0" Margin="20,180,30,0" VerticalAlignment="Top">
             
-            <WrapPanel VerticalAlignment="Center">
-                <Image Source="../Resource/IconFuncionario.png" Width= "40"/>
-                <Label Content="Funcionário" FontSize="20" FontFamily="Century Gothic"
-                       FontWeight="Bold" Margin="0,5" Foreground="#F9F7F7"/>
-            </WrapPanel>
+            <TreeView MinWidth="220">
 
-            <WrapPanel VerticalAlignment="Center">
-                <Image Source="../Resource/IconFinanceiro.png" Width="40"/>
-                <Label Content="Financeiro" FontSize="20" FontFamily="Century Gothic"
-                       FontWeight="Bold" Margin="0,5" Foreground="#F9F7F7"/>
-            </WrapPanel>
+                <TreeViewItem Header="Funcionário" FontFamily="century gothic" FontWeight="Bold" FontSize="15" Foreground="#F9F7F7">
+                    <TreeViewItem Header="Cadastrar Funcionário" FontWeight="Light" Foreground="#F9F7F7"/>
+                    <TreeViewItem Header="Consultar Funcionário" FontWeight="Light" Foreground="#F9F7F7"/>
+                    <TreeViewItem Header="Emitir relatório" FontWeight="Light" Foreground="#F9F7F7"/>
+                </TreeViewItem>
 
-            <WrapPanel VerticalAlignment="Center">
-                <Image Source="../Resource/IconAgenda.png" Width="40"/>
-                <Label Content="Consultas" FontSize="20" FontFamily="Century Gothic"
-                       FontWeight="Bold" Margin="0,5" Foreground="#F9F7F7"/>
-            </WrapPanel>
+                <TreeViewItem Header= "Financeiro" FontFamily="century gothic" FontWeight="Bold" FontSize="15" Foreground="#F9F7F7">
+                    <TreeViewItem Header="Controlar Caixa" FontWeight="Light" Foreground="#F9F7F7"/>
+                    <TreeViewItem Header="Emitir relatório do caixa" FontWeight="Light" Foreground="#F9F7F7"/>
+                    <TreeViewItem Header="Realizar venda" FontWeight="Light" Foreground="#F9F7F7"/>
+                    <TreeViewItem Header="Receber venda" FontWeight="Light" Foreground="#F9F7F7"/>
+                    <TreeViewItem Header="Emitir relatório de venda" FontWeight="Light" Foreground="#F9F7F7"/>
+                    <TreeViewItem Header="Cadastrar despesa" FontWeight="Light" Foreground="#F9F7F7"/>
+                    <TreeViewItem Header="Consultar despesa" FontWeight="Light" Foreground="#F9F7F7"/>
+                    <TreeViewItem Header="Emitir relatório despesa" FontWeight="Light" Foreground="#F9F7F7"/>
+                </TreeViewItem>
 
-            <WrapPanel VerticalAlignment="Center">
-                <Image Source="../Resource/IconProdutos.png" Width="40"/>
-                <Label Content="Produtos" FontSize="20" FontFamily="Century Gothic"
-                       FontWeight="Bold" Margin="0,5" Foreground="#F9F7F7"/>
-            </WrapPanel>
+                <TreeViewItem Header= "Agenda" FontFamily="century gothic" FontWeight="Bold" FontSize="15" Foreground="#F9F7F7">
+                    <TreeViewItem Header="Cadastrar agendamento" FontWeight="Light" Foreground="#F9F7F7"/>
+                    <TreeViewItem Header="Consultar agendamento" FontWeight="Light" Foreground="#F9F7F7"/>             
+                </TreeViewItem>
 
-            <WrapPanel VerticalAlignment="Center">
-                <Image Source="../Resource/IconServico.png" Width="40"/>
-                <Label Content="Serviços" FontSize="20" FontFamily="Century Gothic"
-                       FontWeight="Bold" Margin="0,5" Foreground="#F9F7F7"/>
-            </WrapPanel>
+                <TreeViewItem Header= "Pacientes" FontFamily="century gothic" FontWeight="Bold" FontSize="15" Foreground="#F9F7F7">
+                    <TreeViewItem Header="Cadastrar paciente" FontWeight="Light" Foreground="#F9F7F7"/>
+                    <TreeViewItem Header="Consultar paciente" FontWeight="Light" Foreground="#F9F7F7"/>
+                    <TreeViewItem Header="Emitir relatório" FontWeight="Light" Foreground="#F9F7F7"/>
+                    <TreeViewItem Header="Cadastrar anamnese" FontWeight="Light" Foreground="#F9F7F7"/>
+                    <TreeViewItem Header="Consultar anamnese" FontWeight="Light" Foreground="#F9F7F7"/>
+                </TreeViewItem>
 
-            <WrapPanel VerticalAlignment="Center">
-                <Image Source="../Resource/IconOrcamento.png" Width="40"/>
-                <Label Content="Orçamento" FontSize="20" FontFamily="Century Gothic"
-                       FontWeight="Bold" Margin="0,5" Foreground="#F9F7F7"/>
-            </WrapPanel>
+                <TreeViewItem Header= "Consultas" FontFamily="century gothic" FontWeight="Bold" FontSize="15" Foreground="#F9F7F7">
+                    <TreeViewItem Header="Cadastrar consulta" FontWeight="Light" Foreground="#F9F7F7"/>
+                    <TreeViewItem Header="Consultar consulta" FontWeight="Light" Foreground="#F9F7F7"/>
+                    <TreeViewItem Header="Emitir relatório" FontWeight="Light" Foreground="#F9F7F7"/>                    
+                </TreeViewItem>
+
+                <TreeViewItem Header= "Produtos" FontFamily="century gothic" FontWeight="Bold" FontSize="15" Foreground="#F9F7F7">
+                    <TreeViewItem Header="Cadastrar produto" FontWeight="Light" Foreground="#F9F7F7"/>
+                    <TreeViewItem Header="Consultar produto" FontWeight="Light" Foreground="#F9F7F7"/>
+                    <TreeViewItem Header="Emitir relatório" FontWeight="Light" Foreground="#F9F7F7"/>
+                </TreeViewItem>
+
+                <TreeViewItem Header= "Serviços" FontFamily="century gothic" FontWeight="Bold" FontSize="15" Foreground="#F9F7F7">
+                    <TreeViewItem Header="Cadastrar serviço" FontWeight="Light" Foreground="#F9F7F7"/>
+                    <TreeViewItem Header="Consultar serviço" FontWeight="Light" Foreground="#F9F7F7"/>                    
+                </TreeViewItem>
+
+                <TreeViewItem Header= "Orçamento" FontFamily="century gothic" FontWeight="Bold" FontSize="15" Foreground="#F9F7F7">
+                    <TreeViewItem Header="Cadastrar orçamento" FontWeight="Light" Foreground="#F9F7F7"/>
+                    <TreeViewItem Header="Consultar orçamento" FontWeight="Light" Foreground="#F9F7F7"/>
+                    <TreeViewItem Header="Emitir relatório" FontWeight="Light" Foreground="#F9F7F7"/>
+                </TreeViewItem>
+
+            </TreeView>
 
         </StackPanel>
 
@@ -75,54 +98,59 @@
                             <ColumnDefinition Width="2.5*"/>
                             <ColumnDefinition Width="1.5*"/>
                             <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
                         </Grid.ColumnDefinitions>
 
-                        <StackPanel Grid.Column="0">
-                            <Label Content="Nome:" FontSize="20" FontFamily="Century Gothic"
-                                   Margin="10 2" FontWeight="Bold" Foreground="#112D4E"/>
+                        <StackPanel Grid.Column="0" Margin="10 10">
 
-                            <TextBox FlowDirection="LeftToRight" Padding="6" BorderBrush="Black"
-                                    FontSize="15" FontFamily="Century Gothic" Margin="10 2" Foreground="#112D4E">
+                            <TextBox
+                            FontWeight="Bold"
+                            FontSize="20" FontFamily="Century Gothic" Foreground="#112D4E"
+                            
+                            materialDesign:HintAssist.Hint="Nome"
+                            Style="{StaticResource MaterialDesignOutlinedTextBox}">
+                            </TextBox>
 
-                                <TextBox.Resources>
-                                    <Style TargetType="{x:Type Border}">
-                                        <Setter Property="CornerRadius" Value="10"/>
-                                    </Style>
-                                </TextBox.Resources>
+                        </StackPanel>
 
+                        <StackPanel Grid.Column="1" Margin="10 10">
+                            <TextBox
+                            FontWeight="Bold" FontSize="20"
+                            FontFamily="Century Gothic" Foreground="#112D4E"
+                            
+                            materialDesign:HintAssist.Hint="CPF"
+                            Style="{StaticResource MaterialDesignOutlinedTextBox}">
                             </TextBox>
                         </StackPanel>
 
-                        <StackPanel Grid.Column="1">
-                            <Label Content="CPF:" FontSize="20" FontFamily="Century Gothic"
-                                   Margin="10 2" FontWeight="Bold" Foreground="#112D4E"/>
-
-                            <TextBox FlowDirection="LeftToRight" Padding="6" BorderBrush="Black"
-                                    FontSize="15" FontFamily="Century Gothic" Margin="10 2" Foreground="#112D4E">
-
-                                <TextBox.Resources>
-                                    <Style TargetType="{x:Type Border}">
-                                        <Setter Property="CornerRadius" Value="10"/>
-                                    </Style>
-                                </TextBox.Resources>
-
-                            </TextBox>
+                        <StackPanel Grid.Column="2" Margin="10 10">
+                            <ComboBox
+                              FontWeight="Bold"
+                              FontSize="20" FontFamily="Century Gothic" Foreground="#112D4E"
+                              materialDesign:HintAssist.Hint="Status"
+                              Style="{StaticResource MaterialDesignOutlinedComboBox}" Height="58">
+                                <ComboBoxItem
+                                Content="Ativo" />
+                                <ComboBoxItem
+                                Content="Inativo" />
+                            </ComboBox>
                         </StackPanel>
 
-                        <StackPanel Grid.Column="3">
-                            <Label Content="Status:" FontSize="20" FontFamily="Century Gothic"
-                                   Margin="10 2" FontWeight="Bold" Foreground="#112D4E"/>
-
-                            <TextBox FlowDirection="LeftToRight" Padding="6" BorderBrush="Black"
-                                    FontSize="15" FontFamily="Century Gothic" Margin="10 2" Foreground="#112D4E">
-
-                                <TextBox.Resources>
-                                    <Style TargetType="{x:Type Border}">
-                                        <Setter Property="CornerRadius" Value="10"/>
-                                    </Style>
-                                </TextBox.Resources>
-
-                            </TextBox>
+                        <StackPanel Grid.Column="3" Margin="10 10">
+                            <ComboBox
+                              FontWeight="Bold"
+                              FontSize="20" FontFamily="Century Gothic" Foreground="#112D4E"
+                              materialDesign:HintAssist.Hint="Estado Civil"
+                              Style="{StaticResource MaterialDesignOutlinedComboBox}" Height="58">
+                                <ComboBoxItem
+                                Content="Solteiro(a)" />
+                                <ComboBoxItem
+                                Content="Casado(a)" />
+                                <ComboBoxItem
+                                Content="Divorciado(a)" />
+                                <ComboBoxItem
+                                Content="Viúvo(a)" />
+                            </ComboBox>
                         </StackPanel>
                     </Grid>
 
@@ -130,144 +158,99 @@
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="1*"/>
                             <ColumnDefinition Width="1*"/>
-                            <ColumnDefinition Width="1*"/>
-                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>                            
+                            <ColumnDefinition Width="1*"/>                            
                         </Grid.ColumnDefinitions>
 
-                        <StackPanel Grid.Column="0">
-                            <Label Content="RG:" FontSize="20" FontFamily="Century Gothic"
-                                   Margin="10 2" FontWeight="Bold" Foreground="#112D4E"/>
-
-                            <TextBox FlowDirection="LeftToRight" Padding="6" BorderBrush="Black"
-                                    FontSize="15" FontFamily="Century Gothic" Margin="10 2" Foreground="#112D4E">
-
-                                <TextBox.Resources>
-                                    <Style TargetType="{x:Type Border}">
-                                        <Setter Property="CornerRadius" Value="10"/>
-                                    </Style>
-                                </TextBox.Resources>
-
+                        <StackPanel Grid.Column="0" Margin="10 10">
+                            <TextBox
+                            FontWeight="Bold"
+                            FontSize="20" FontFamily="Century Gothic" Foreground="#112D4E"
+                            
+                            materialDesign:HintAssist.Hint="RG"
+                            Style="{StaticResource MaterialDesignOutlinedTextBox}">
                             </TextBox>
                         </StackPanel>
 
-                        <StackPanel Grid.Column="1">
-                            <Label Content="Expedidor:" FontSize="20" FontFamily="Century Gothic"
-                                   Margin="10 2" FontWeight="Bold" Foreground="#112D4E"/>
-
-                            <TextBox FlowDirection="LeftToRight" Padding="6" BorderBrush="Black"
-                                    FontSize="15" FontFamily="Century Gothic" Margin="10 2" Foreground="#112D4E">
-
-                                <TextBox.Resources>
-                                    <Style TargetType="{x:Type Border}">
-                                        <Setter Property="CornerRadius" Value="10"/>
-                                    </Style>
-                                </TextBox.Resources>
-
+                        <StackPanel Grid.Column="1" Margin="10 10">
+                            <TextBox
+                            FontWeight="Bold"
+                            FontSize="20" FontFamily="Century Gothic" Foreground="#112D4E"
+                            
+                            materialDesign:HintAssist.Hint="Expedidor"
+                            Style="{StaticResource MaterialDesignOutlinedTextBox}">
                             </TextBox>
                         </StackPanel>
 
-                        <StackPanel Grid.Column="2">
-                            <Label Content="Estado Civil:" FontSize="20" FontFamily="Century Gothic"
-                                   Margin="10 2" FontWeight="Bold" Foreground="#112D4E"/>
-
-                            <TextBox FlowDirection="LeftToRight" Padding="6" BorderBrush="Black"
-                                    FontSize="15" FontFamily="Century Gothic" Margin="10 2" Foreground="#112D4E">
-
-                                <TextBox.Resources>
-                                    <Style TargetType="{x:Type Border}">
-                                        <Setter Property="CornerRadius" Value="10"/>
-                                    </Style>
-                                </TextBox.Resources>
-
+                        <StackPanel Grid.Column="2" Margin="10 10">
+                            <TextBox
+                            FontWeight="Bold"
+                            FontSize="20" FontFamily="Century Gothic" Foreground="#112D4E"
+                            
+                            materialDesign:HintAssist.Hint="Telefone"
+                            Style="{StaticResource MaterialDesignOutlinedTextBox}">
                             </TextBox>
                         </StackPanel>
 
-                        <StackPanel Grid.Column="3">
-                            <Label Content="Gênero:" FontSize="20" FontFamily="Century Gothic"
-                                   Margin="10 2" FontWeight="Bold" Foreground="#112D4E"/>
-
-                            <TextBox FlowDirection="LeftToRight" Padding="6" BorderBrush="Black"
-                                    FontSize="15" FontFamily="Century Gothic" Margin="10 2" Foreground="#112D4E">
-
-                                <TextBox.Resources>
-                                    <Style TargetType="{x:Type Border}">
-                                        <Setter Property="CornerRadius" Value="10"/>
-                                    </Style>
-                                </TextBox.Resources>
-
-                            </TextBox>
+                        <StackPanel Grid.Column="3" Margin="10 10">
+                            <ComboBox
+                              FontWeight="Bold"
+                              FontSize="20" FontFamily="Century Gothic" Foreground="#112D4E"
+                              materialDesign:HintAssist.Hint="Gênero"
+                              Style="{StaticResource MaterialDesignOutlinedComboBox}" Height="58">
+                                <ComboBoxItem
+                                Content="Masculino" />
+                                <ComboBoxItem
+                                Content="Feminino" />
+                                <ComboBoxItem
+                                Content="Rock" />                                
+                            </ComboBox>
                         </StackPanel>
                     </Grid>
 
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="1.5*"/>
-                            <ColumnDefinition Width="0.8*"/>
                             <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="0.8*"/>
                             <ColumnDefinition Width="1*"/>
                         </Grid.ColumnDefinitions>
 
-                        <StackPanel Grid.Column="0">
-                            <Label Content="Email:" FontSize="20" FontFamily="Century Gothic"
-                                   Margin="10 2" FontWeight="Bold" Foreground="#112D4E"/>
-
-                            <TextBox FlowDirection="LeftToRight" Padding="6" BorderBrush="Black"
-                                    FontSize="15" FontFamily="Century Gothic" Margin="10 2" Foreground="#112D4E">
-
-                                <TextBox.Resources>
-                                    <Style TargetType="{x:Type Border}">
-                                        <Setter Property="CornerRadius" Value="10"/>
-                                    </Style>
-                                </TextBox.Resources>
-
+                        <StackPanel Grid.Column="0" Margin="10 10">
+                            <TextBox
+                            FontWeight="Bold"
+                            FontSize="20" FontFamily="Century Gothic" Foreground="#112D4E"
+                            
+                            materialDesign:HintAssist.Hint="Email"
+                            Style="{StaticResource MaterialDesignOutlinedTextBox}">
                             </TextBox>
                         </StackPanel>
 
-                        <StackPanel Grid.Column="1">
-                            <Label Content="Telefone:" FontSize="20" FontFamily="Century Gothic"
-                                   Margin="10 2" FontWeight="Bold" Foreground="#112D4E"/>
+                        <StackPanel Grid.Column="1" Margin="10 10">
+                            <DatePicker
+                              FontWeight="Bold"
+                              FontSize="20" FontFamily="Century Gothic" Foreground="#112D4E"
+                              materialDesign:HintAssist.Hint="Data de nascimento"
+                              Style="{StaticResource MaterialDesignOutlinedDatePicker}" Height="58" />
+                        </StackPanel>
 
-                            <TextBox FlowDirection="LeftToRight" Padding="6" BorderBrush="Black"
-                                    FontSize="15" FontFamily="Century Gothic" Margin="10 2" Foreground="#112D4E">
-
-                                <TextBox.Resources>
-                                    <Style TargetType="{x:Type Border}">
-                                        <Setter Property="CornerRadius" Value="10"/>
-                                    </Style>
-                                </TextBox.Resources>
-
+                        <StackPanel Grid.Column="2" Margin="10 10">
+                            <TextBox
+                            FontWeight="Bold"
+                            FontSize="20" FontFamily="Century Gothic" Foreground="#112D4E"
+                            
+                            materialDesign:HintAssist.Hint="CEP"
+                            Style="{StaticResource MaterialDesignOutlinedTextBox}">
                             </TextBox>
                         </StackPanel>
 
-                        <StackPanel Grid.Column="2">
-                            <Label Content="Data de nascimento:" FontSize="20" FontFamily="Century Gothic"
-                                   Margin="10 2" FontWeight="Bold" Foreground="#112D4E"/>
-
-                            <TextBox FlowDirection="LeftToRight" Padding="6" BorderBrush="Black"
-                                    FontSize="15" FontFamily="Century Gothic" Margin="10 2" Foreground="#112D4E">
-
-                                <TextBox.Resources>
-                                    <Style TargetType="{x:Type Border}">
-                                        <Setter Property="CornerRadius" Value="10"/>
-                                    </Style>
-                                </TextBox.Resources>
-
-                            </TextBox>
-                        </StackPanel>
-
-                        <StackPanel Grid.Column="3">
-                            <Label Content="CEP:" FontSize="20" FontFamily="Century Gothic"
-                                   Margin="10 2" FontWeight="Bold" Foreground="#112D4E"/>
-
-                            <TextBox FlowDirection="LeftToRight" Padding="6" BorderBrush="Black"
-                                    FontSize="15" FontFamily="Century Gothic" Margin="10 2" Foreground="#112D4E">
-
-                                <TextBox.Resources>
-                                    <Style TargetType="{x:Type Border}">
-                                        <Setter Property="CornerRadius" Value="10"/>
-                                    </Style>
-                                </TextBox.Resources>
-
+                        <StackPanel Grid.Column="3" Margin="10 10">
+                            <TextBox
+                            FontWeight="Bold"
+                            FontSize="20" FontFamily="Century Gothic" Foreground="#112D4E"
+                            
+                            materialDesign:HintAssist.Hint="Estado"
+                            Style="{StaticResource MaterialDesignOutlinedTextBox}">
                             </TextBox>
                         </StackPanel>
                     </Grid>
@@ -280,67 +263,43 @@
                             <ColumnDefinition Width="0.5*"/>
                         </Grid.ColumnDefinitions>
 
-                        <StackPanel Grid.Column="0">
-                            <Label Content="Cidade:" FontSize="20" FontFamily="Century Gothic"
-                                   Margin="10 2" FontWeight="Bold" Foreground="#112D4E"/>
-
-                            <TextBox FlowDirection="LeftToRight" Padding="6" BorderBrush="Black"
-                                    FontSize="15" FontFamily="Century Gothic" Margin="10 2" Foreground="#112D4E">
-
-                                <TextBox.Resources>
-                                    <Style TargetType="{x:Type Border}">
-                                        <Setter Property="CornerRadius" Value="10"/>
-                                    </Style>
-                                </TextBox.Resources>
-
+                        <StackPanel Grid.Column="0" Margin="10 10">
+                            <TextBox
+                            FontWeight="Bold"
+                            FontSize="20" FontFamily="Century Gothic" Foreground="#112D4E"
+                            
+                            materialDesign:HintAssist.Hint="Cidade"
+                            Style="{StaticResource MaterialDesignOutlinedTextBox}">
                             </TextBox>
                         </StackPanel>
 
-                        <StackPanel Grid.Column="1">
-                            <Label Content="Bairro:" FontSize="20" FontFamily="Century Gothic"
-                                   Margin="10 2" FontWeight="Bold" Foreground="#112D4E"/>
-
-                            <TextBox FlowDirection="LeftToRight" Padding="6" BorderBrush="Black"
-                                    FontSize="15" FontFamily="Century Gothic" Margin="10 2" Foreground="#112D4E">
-
-                                <TextBox.Resources>
-                                    <Style TargetType="{x:Type Border}">
-                                        <Setter Property="CornerRadius" Value="10"/>
-                                    </Style>
-                                </TextBox.Resources>
-
+                        <StackPanel Grid.Column="1" Margin="10 10">
+                            <TextBox
+                            FontWeight="Bold"
+                            FontSize="20" FontFamily="Century Gothic" Foreground="#112D4E"
+                            
+                            materialDesign:HintAssist.Hint="Bairro"
+                            Style="{StaticResource MaterialDesignOutlinedTextBox}">
                             </TextBox>
                         </StackPanel>
 
-                        <StackPanel Grid.Column="2">
-                            <Label Content="Rua:" FontSize="20" FontFamily="Century Gothic"
-                                   Margin="10 2" FontWeight="Bold" Foreground="#112D4E"/>
-
-                            <TextBox FlowDirection="LeftToRight" Padding="6" BorderBrush="Black"
-                                    FontSize="15" FontFamily="Century Gothic" Margin="10 2" Foreground="#112D4E">
-
-                                <TextBox.Resources>
-                                    <Style TargetType="{x:Type Border}">
-                                        <Setter Property="CornerRadius" Value="10"/>
-                                    </Style>
-                                </TextBox.Resources>
-
+                        <StackPanel Grid.Column="2" Margin="10 10">
+                            <TextBox
+                            FontWeight="Bold"
+                            FontSize="20" FontFamily="Century Gothic" Foreground="#112D4E"
+                            
+                            materialDesign:HintAssist.Hint="Bairro"
+                            Style="{StaticResource MaterialDesignOutlinedTextBox}">
                             </TextBox>
                         </StackPanel>
 
-                        <StackPanel Grid.Column="3">
-                            <Label Content="Número:" FontSize="20" FontFamily="Century Gothic"
-                                   Margin="10 2" FontWeight="Bold" Foreground="#112D4E"/>
-
-                            <TextBox FlowDirection="LeftToRight" Padding="6" BorderBrush="Black"
-                                    FontSize="15" FontFamily="Century Gothic" Margin="10 2" Foreground="#112D4E">
-
-                                <TextBox.Resources>
-                                    <Style TargetType="{x:Type Border}">
-                                        <Setter Property="CornerRadius" Value="10"/>
-                                    </Style>
-                                </TextBox.Resources>
-
+                        <StackPanel Grid.Column="3" Margin="10 10">
+                            <TextBox
+                            FontWeight="Bold"
+                            FontSize="20" FontFamily="Century Gothic" Foreground="#112D4E"
+                            
+                            materialDesign:HintAssist.Hint="Número"
+                            Style="{StaticResource MaterialDesignOutlinedTextBox}">
                             </TextBox>
                         </StackPanel>
                     </Grid>
@@ -354,70 +313,66 @@
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
 
-                        <Button Grid.Column="0" Padding="6" Background="#F9F7F7"
-                        BorderBrush="#112D4E" BorderThickness="2" Margin="10 2">
-
+                        <Button
+                            Grid.Column="0" Height="50" Background="#F9F7F7"
+                            BorderBrush="#112D4E" BorderThickness="1" Margin="10 2"
+                            materialDesign:ButtonAssist.CornerRadius="10"
+                            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+                            Style="{StaticResource MaterialDesignRaisedButton}"
+                            ToolTip="MaterialDesignRaisedButton with Round Corners">                                
+                                
                             <WrapPanel VerticalAlignment="Center">
                                 <Image Source="../Resource/BotaoSalvar.png" Width= "30"/>
                                 <Label Content="Salvar" FontSize="15" FontFamily="Century Gothic"
-                                 Margin="0,5" Foreground="#112D4E"/>
+                                Foreground="#112D4E" VerticalAlignment="Center" FontWeight="Bold"/>
                             </WrapPanel>
-
-                            <Button.Resources>
-                                <Style TargetType="{x:Type Border}">
-                                    <Setter Property="CornerRadius" Value="15"/>
-                                </Style>
-                            </Button.Resources>
-
                         </Button>
+                        
 
 
-                        <Button Grid.Column="1" Padding="6" Background="#F9F7F7"
-                        BorderBrush="#112D4E" BorderThickness="2" Margin="10 2">
+                        <Button
+                            Grid.Column="1" Height="50" Background="#F9F7F7"
+                            BorderBrush="#112D4E" BorderThickness="1" Margin="10 2"
+                            materialDesign:ButtonAssist.CornerRadius="10"
+                            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+                            Style="{StaticResource MaterialDesignRaisedButton}"
+                            ToolTip="MaterialDesignRaisedButton with Round Corners">
 
                             <WrapPanel VerticalAlignment="Center">
                                 <Image Source="../Resource/BotaoNovo.png" Width= "30"/>
                                 <Label Content="Novo" FontSize="15" FontFamily="Century Gothic"
-                                 Margin="0,5" Foreground="#112D4E"/>
+                                Foreground="#112D4E" VerticalAlignment="Center" FontWeight="Bold"/>
                             </WrapPanel>
-                            
-                            <Button.Resources>
-                                <Style TargetType="{x:Type Border}">
-                                    <Setter Property="CornerRadius" Value="15"/>
-                                </Style>
-                            </Button.Resources>
                         </Button>
 
-                        <Button Grid.Column="2" Padding="6" Background="#F9F7F7"
-                        BorderBrush="#112D4E" BorderThickness="2" Margin="10 2">
+                        <Button
+                            Grid.Column="2" Height="50" Background="#F9F7F7"
+                            BorderBrush="#112D4E" BorderThickness="1" Margin="10 2"
+                            materialDesign:ButtonAssist.CornerRadius="10"
+                            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+                            Style="{StaticResource MaterialDesignRaisedButton}"
+                            ToolTip="MaterialDesignRaisedButton with Round Corners">
 
                             <WrapPanel VerticalAlignment="Center">
                                 <Image Source="../Resource/BotaoAnamnese.png" Width= "30"/>
                                 <Label Content="Anamnese" FontSize="15" FontFamily="Century Gothic"
-                                 Margin="0,5" Foreground="#112D4E"/>
+                                Foreground="#112D4E" VerticalAlignment="Center" FontWeight="Bold"/>
                             </WrapPanel>
-
-                            <Button.Resources>
-                                <Style TargetType="{x:Type Border}">
-                                    <Setter Property="CornerRadius" Value="15"/>
-                                </Style>
-                            </Button.Resources>
                         </Button>
 
-                        <Button Grid.Column="3" Padding="6" Background="#F9F7F7"
-                        BorderBrush="#112D4E" BorderThickness="2" Margin="10 2">
+                        <Button
+                            Grid.Column="3" Height="50" Background="#F9F7F7"
+                            BorderBrush="#112D4E" BorderThickness="1" Margin="10 2"
+                            materialDesign:ButtonAssist.CornerRadius="10"
+                            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+                            Style="{StaticResource MaterialDesignRaisedButton}"
+                            ToolTip="MaterialDesignRaisedButton with Round Corners">
 
                             <WrapPanel VerticalAlignment="Center">
                                 <Image Source="../Resource/BotaoOrcamento.png" Width= "30"/>
                                 <Label Content="Orçamento" FontSize="15" FontFamily="Century Gothic"
-                                 Margin="0,5" Foreground="#112D4E"/>
+                                Foreground="#112D4E" VerticalAlignment="Center" FontWeight="Bold"/>
                             </WrapPanel>
-
-                            <Button.Resources>
-                                <Style TargetType="{x:Type Border}">
-                                    <Setter Property="CornerRadius" Value="15"/>
-                                </Style>
-                            </Button.Resources>
                         </Button>
 
                     </Grid>

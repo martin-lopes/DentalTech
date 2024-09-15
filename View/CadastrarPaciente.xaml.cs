@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+using System;
+using DentalTech.View;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -33,6 +35,13 @@ namespace DentalTech
         private void TextBox_TextInput(object sender, TextCompositionEventArgs e)
         {
 
+        }
+
+        private void AcessoCadastrarFuncionario_Click(object sender, MouseButtonEventArgs a)
+        {
+            CadastrarFuncionario cadastrarFuncionario = new CadastrarFuncionario();
+            cadastrarFuncionario.Show();
+            this.Close();
         }
     }
 }

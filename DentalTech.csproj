@@ -66,6 +66,39 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="View\CadastrarOrcamento.xaml.cs">
+      <DependentUpon>CadastrarOrcamento.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CadastrarProduto.xaml.cs">
+      <DependentUpon>CadastrarProduto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CadastrarServico.xaml.cs">
+      <DependentUpon>CadastrarServico.xaml</DependentUpon>
+    </Compile>
+    <Page Include="View\CadastrarAgendamento.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\CadastrarAnamnese.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\CadastrarConsulta.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\CadastrarDespesa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\CadastrarFuncionario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\CadastrarOrcamento.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\CadastrarPaciente.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -74,10 +107,33 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="View\CadastrarAgendamento.xaml.cs">
+      <DependentUpon>CadastrarAgendamento.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CadastrarAnamnese.xaml.cs">
+      <DependentUpon>CadastrarAnamnese.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CadastrarConsulta.xaml.cs">
+      <DependentUpon>CadastrarConsulta.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CadastrarDespesa.xaml.cs">
+      <DependentUpon>CadastrarDespesa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CadastrarFuncionario.xaml.cs">
+      <DependentUpon>CadastrarFuncionario.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\CadastrarPaciente.xaml.cs">
       <DependentUpon>CadastrarPaciente.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="View\CadastrarProduto.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\CadastrarServico.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
